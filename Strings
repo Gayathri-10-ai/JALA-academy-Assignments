@@ -1,0 +1,53 @@
+import re
+
+str1 = "Hello"
+str2 = str("World")
+char_array = ['J', 'A', 'V', 'A']
+str3 = "".join(char_array)
+
+concat_str = str1 + " " + str2
+
+length = len(concat_str)
+
+sub_str = concat_str[6:11]
+
+index = concat_str.find("World")
+
+matches = bool(re.match(r"[A-Z][a-z]+", str1))
+
+equals = str1 == str2
+equals_ignore_case = str1.lower() == "hello"
+
+starts = str1.startswith("He")
+ends = str2.endswith("ld")
+compare = (str1 > str2) - (str1 < str2)
+
+trimmed = "  Hello World  ".strip()
+
+replaced = str1.replace('l', 'x')
+
+split_str = concat_str.split(" ")
+
+num = 100
+num_str = str(num)
+
+upper = str1.upper()
+lower = str2.lower()
+
+print("Different ways to create a string:", str1, str2, str3)
+print("Concatenated String:", concat_str)
+print("Length of String:", length)
+print("Substring:", sub_str)
+print("Index of 'World':", index)
+print("Matches regex '[A-Z][a-z]+':", matches)
+print("String equals:", equals)
+print("String equalsIgnoreCase:", equals_ignore_case)
+print("Starts with 'He':", starts)
+print("Ends with 'ld':", ends)
+print("CompareTo result:", compare)
+print("Trimmed String:", trimmed)
+print("Replaced String:", replaced)
+print("Split String:", split_str)
+print("Integer to String:", num_str)
+print("Uppercase:", upper)
+print("Lowercase:", lower)
