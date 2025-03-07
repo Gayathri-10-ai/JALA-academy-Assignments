@@ -1,0 +1,42 @@
+def arithmetic_operations(a, b):
+    print("Addition:", a + b)
+    print("Subtraction:", a - b)
+    print("Multiplication:", a * b)
+    print("Division:", a / b if b != 0 else "Division by zero not allowed")
+
+def increment_decrement(n):
+    n += 1
+    print("After Increment:", n)
+    n -= 2
+    print("After Decrement:", n)
+
+def check_equality(x, y):
+    print("Numbers are Equal" if x == y else "Numbers are Not Equal")
+
+def relational_operators(a, b):
+    print("a < b:", a < b)
+    print("a <= b:", a <= b)
+    print("a > b:", a > b)
+    print("a >= b:", a >= b)
+
+def min_max(a, b):
+    print("Smaller Number:", min(a, b))
+    print("Larger Number:", max(a, b))
+
+a, b = 10, 5
+n = 7
+
+print("Arithmetic Operations:")
+arithmetic_operations(a, b)
+
+print("\nIncrement and Decrement:")
+increment_decrement(n)
+
+print("\nCheck Equality:")
+check_equality(a, b)
+
+print("\nRelational Operators:")
+relational_operators(a, b)
+
+print("\nSmaller and Larger Number:")
+min_max(a, b)
